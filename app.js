@@ -9,7 +9,7 @@ const app = new App({
 
 app.message('hey', async ({ message, say }) => {
   // say() sends a message to the channel where the event was triggered
-  await say(`suh fool <@${message.user}> (;`);
+  await say(`heyyo <@${message.user}> (;`);
 });
 
 app.message('bobby', async ({ message, say }) => {
@@ -25,12 +25,12 @@ app.message('bobby', async ({ message, say }) => {
   });
 });
 
-app.message('what it do', async ({ message, say }) => {
+app.message('late', async ({ message, say }) => {
   // say() sends a message to the channel where the event was triggered
-  await say(`ohh y'a know, just thuggin' (;`);
+  await say(`yeah you are`);
 });
 
-app.message('thuggin', async({ message, say }) => {
+app.message('yes', async({ message, say }) => {
   await say(`:eyes:`)
 });
 
@@ -55,7 +55,7 @@ app.event('app_home_opened', async ({ event, client, context }) => {
             "type": "section",
             "text": {
               "type": "mrkdwn",
-              "text": "Bobby Cox, American Baseball Manager :baseball: (and Pink Pincher investor)"
+              "text": "Bobby, Baseball Manager :baseball:"
             }
           },
           {
@@ -107,7 +107,7 @@ app.command('/bobby', async ({ ack, payload, context }) => {
             type: 'button',
             text: {
               type: 'plain_text',
-              text: 'Click to open a random photo(;'
+              text: 'Click to open a random photo'
             },
             action_id: 'button_abc'
           }
