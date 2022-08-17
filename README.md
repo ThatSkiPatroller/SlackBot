@@ -7,3 +7,5 @@ This repo contains a Bolt App which is a framework allowing you to build JavaScr
 Here is the Bolt docs: https://slack.dev/bolt
 
 Currently have my own implementation of a Slackbot I call Bobby in app.js, so this is not a base template but my own bot. 
+
+This app is currently being run on Glitch.com
